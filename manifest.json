@@ -1,0 +1,40 @@
+{
+  "manifest_version": 3,
+  "name": "Cookie Monitor",
+  "version": "0.5.2",
+  "action": {
+    "default_icon": {
+      "16": "Icons/Icon16.png",
+      "24": "Icons/Icon24.png",
+      "32": "Icons/Icon32.png"
+    },
+    "default_title": "Click this!",
+    "default_popup": "Popup/popup.html"
+  },
+  "description": "This is extension has the power to show you all existing cookies",
+  "icons": {
+    "16": "Icons/Icon16.png",
+    "32": "Icons/Icon32.png",
+    "48": "Icons/Icon48.png",
+    "128": "Icons/Icon128.png"
+  },
+  "author": "LeonTM",
+  "host_permissions": [
+    "http://*/*",
+    "https://*/*"
+  ],
+  "content_security_policy": {
+    "extension_pages": "script-src 'self'; object-src 'self';",
+    "sandbox": "sandbox allow-scripts allow-forms allow-popups allow-modals; script-src 'self' 'unsafe-inline' 'unsafe-eval'; child-src 'self';"
+  },
+  "minimum_chrome_version": "107",
+  "permissions": [
+    "activeTab",
+    "cookies",
+    "tabGroups",
+    "tabs",
+    "nativeMessaging"
+  ],
+  "short_name": "Cookie Monitor",
+  "version_name": "0.5 alpha"
+}

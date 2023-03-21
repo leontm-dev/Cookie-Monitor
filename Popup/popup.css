@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css2?family=Mulish&display=swap');
+html {
+    height: 500px;
+    width: 500px;
+    border-radius: 20px;
+}
+.nav-bar {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 50px;
+    background-color: rgb(80, 177, 223);
+    width: 100%;
+    border-radius: 0px 0px 20px 20px;
+    display: flex;
+    justify-content: center;
+    z-index: 200;
+}
+.nav-title {
+    position: relative;
+    height: 50px;
+    font-size: 40px;
+    font-family: "Mulish";
+    z-index: 200;
+}
+.main {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 100%;
+    width: 100%;
+    background-color: gray;
+}
+.table-container {
+    position: absolute;
+    top: 70px;
+    left: 5%;
+    width: 90%;
+    overflow: scroll;
+    height: 300px;
+}
+.table-container::-webkit-scrollbar {
+    width: 1px;
+    background-color: transparent;
+}
+.table-container::-webkit-scrollbar-corner {
+    display: none;
+}
+.table-container::-webkit-scrollbar-track {
+    background-color: transparent;
+}
+.table-container::-webkit-scrollbar-thumb {
+    width: 3px;
+    background-color: black;
+    border-radius: 20px;
+}
+.cookie-table {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    overflow: scroll;
+    font-family: "Mulish";
+    row-gap: 0px;
+    height: 100%;
+    width: 100%;
+};
+.table-item {
+    position: relative;
+    border-right: solid;
+    border-left: solid;
+    border-color: rgb(80, 177, 223);
+    max-width: 200px;
+}
+.table-text {
+    position: relative;
+    width: 90px;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+.table-header {
+    font-size: 25px;
+    border-bottom: solid;
+    border-color: rgb(80, 177, 223);
+    height: 40px;
+}
+.buttons {
+    height: 60px;
+    position: absolute;
+    left: 5%;
+    bottom: 5%;
+    justify-content: space-around;
+    display: flex;
+    width: 90%;
+}
+.item-button {
+    width: 100px;
+    height: 60px;
+    background-color: rgb(80, 177, 223);
+    justify-content: center;
+    display: flex;
+    border-radius: 40px;
+}
+.item-button:hover {
+    cursor: pointer;
+}
+.item-button img {
+    margin: auto;
+}

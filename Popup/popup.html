@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cookie Monitor</title>
+    <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+    <nav class="nav-bar" id="nav-bar">
+        <div class="nav-title" id="nav-title">Cookie Monitor</div>
+    </nav>
+    <div class="main" id="main">
+        <div class="table-container">
+            <table class="cookie-table" id="cookie-table">
+                <tr>
+                    <th class="table-header table-item"><span class="table-text">Index</span></th>
+                    <th class="table-header table-item"><span class="table-text">Domain</span></th>
+                    <th class="table-header table-item"><span class="table-text">Name</span></th>
+                    <th class="table-header table-item"><span class="table-text">Value</span></th>
+                    <th class="table-header table-item"><span class="table-text">Expires on</span></th>
+                </tr>
+                <tr>
+                    <th>
+                        <span class="table-text"></span>
+                    </th>
+                </tr>
+            </table>
+        </div>
+        <div class="buttons" id="buttons">
+            <div class="item-button" title="Reload" id="reload">
+                <img src="/Images/Black/Reload.png">
+            </div>
+            <div class="item-button" title="Delete All" id="delete-all">
+                <img src="/Images/Black/Delete-Detail.png">
+            </div>
+        </div>
+    </div>
+    <script src="popup.js"></script>
+</body>
+</html>
